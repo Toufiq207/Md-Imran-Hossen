@@ -56,11 +56,12 @@ return ( <nav className="fixed inset-x-0 top-0 z-[999999] w-full font-pop">
     <Container className="flex h-[70px] items-center justify-between px-4">
       
       {/* Logo */}
-      <a href="#home">
-        <h1 className="text-3xl font-bold text-white">
-          RI<span className="text-red-500">B</span>
-        </h1>
+      <a href="#home" className="group">
+      <Image className='w-[50px] rounded-full' src={LogoOne}/>
+
+        <div className="h-[2px] w-0 bg-red-500 transition-all duration-300 group-hover:w-full" />
       </a>
+
 
       {/* Menu Button */}
       <button
